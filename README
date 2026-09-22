@@ -27,8 +27,8 @@
       [a]dd  [name] - Add a password entry.
       [d]el  [name] - Delete a password entry.
       [e]dit [name] - Edit a password entry with vi.
-      [g]it  [cmd] - Run git command in the password dir.
-      [l]ist [cat] - List all entries in a category.
+      [g]it  [cmd]  - Run git command in the password dir.
+      [l]ist [cat]  - List all entries in a category.
       [s]how [name] - Show password for an entry.
       [m]ove [src] [name] - Rename a password entry.
 
