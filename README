@@ -24,7 +24,7 @@
       a simple password manager
 
     commands:
-      [a]dd  [[cat/]name] - Add a password entry.
+      [a]dd  [name]       - Add a password entry.
       [d]el  [name]       - Delete a password entry.
       [e]dit [name]       - Edit a password entry with vi.
       [g]it  [cmd]        - Run git command in the password dir.
@@ -38,31 +38,30 @@
       password pattern: export PA_PATTERN=A-Za-z0-9_-
       disable tracking: export PA_NOGIT=
 
-
   command examples
-    $ pa add test
+    $ pa add test/password
     generate a password? [y/N]: y
-    saved 'test' to the store.
+    saved 'test/password' to the store.
 
     $ pa list
-    test
+    test/password
 
-    $ pa show test
+    $ pa show test/password
     vJwKuEBtxBVvdR-xppTdfofIei0oLlkoSK4OCSP2bMEBsP6ahM
 
-    $ pa edit test
+    $ pa edit test/password
     <opens $EDITOR or vi>
 
-    $ pa mv test example
+    $ pa mv test/password example
 
     $ pa del example
     delete password 'example'? [y/N]: y
 
     $ pa git log --oneline
     bbe85dc (HEAD -> main) delete 'example'
-    c7f76d7 move 'test' to 'example'
-    b597c04 edit 'test'
-    cba20cc add 'test'
+    c7f76d7 move 'test/password' to 'example'
+    b597c04 edit 'test/password'
+    cba20cc add 'test/password'
     ef76f7e initial commit
 
 
