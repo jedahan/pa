@@ -5,7 +5,8 @@
 # put otp secrets in 'otp/' category
 
 for dependency in fuzzel oathtool wtype; do
-  command -v $dependency >/dev/null || { printf '%s not found' "$dependency"; exit 1; }
+  command -v $dependency >/dev/null \
+    || { echo "$dependency not found"; exit 1; }
 done
 
 pa show $(pa list otp | fuzzel --dmenu "$@") \
