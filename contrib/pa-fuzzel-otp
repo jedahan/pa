@@ -10,4 +10,4 @@ for dependency in fuzzel oathtool wtype; do
 done
 
 pa show $(pa list otp | fuzzel --dmenu "$@") \
-  | head --lines 1 | oathtool --base32 --totp - | tr --delete '\n' | wtype -
+  | head -l 1 | oathtool --base32 --totp - | tr -d '\n' | wtype -
