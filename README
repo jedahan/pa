@@ -38,6 +38,7 @@
       password pattern: export PA_PATTERN=A-Za-z0-9_-
       disable tracking: export PA_NOGIT=
 
+
   command examples
     $ pa add test/password
     generate a password? [y/N]: y
